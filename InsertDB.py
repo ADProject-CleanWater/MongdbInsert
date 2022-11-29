@@ -3,7 +3,7 @@ import pymongo
 from pymongo import MongoClient
 
 # myclient = pymongo.MongoClient("mongodb://3.34.50.139:27017/")
-myclient = MongoClient('localhost', 27017)  # mongoDB는 27017 포트로 돌아갑니다.
+myclient = MongoClient("mongodb://3.34.50.139:27017/", 27017)  # mongoDB는 27017 포트로 돌아갑니다.
 
 # db =myclient.MONGODB
 db = myclient["pmsbme"]
