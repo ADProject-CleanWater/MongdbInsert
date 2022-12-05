@@ -3,12 +3,12 @@ import pymongo
 from pymongo import MongoClient
 
 # myclient = pymongo.MongoClient("mongodb://3.34.50.139:27017/")
-myclient = MongoClient("mongodb://3.34.50.139:27017/", 27017)  # mongoDB는 27017 포트로 돌아갑니다.
+myclient = MongoClient("mongodb+srv://AD:cleanwater@ad.srr069e.mongodb.net/?retryWrites=true&w=majority", 27017)  # mongoDB는 27017 포트로 돌아갑니다.
 
 # db =myclient.MONGODB
-db = myclient["pmsbme"]
-pms = db["pms"]
-bme = db["bme"]
+db = myclient["AD"]
+pms = db["pmstest"]
+bme = db["bmetest"]
 
 # '2008_2021_pms.csv' 미세먼지데이터
 # '2008_2021_bme.csv' 온도,습도데이터
